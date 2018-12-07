@@ -17,11 +17,3 @@ int pop_front(Node **head) {
   free(ear);
   return value;
 }
-
-int size(Node *head){
-  int i = 0;
-  for(i; head; i++ ){
-    head = head->next;
-  }
-  return i;
-}
