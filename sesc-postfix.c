@@ -11,34 +11,34 @@ int main(void) {
     }
     switch (str){
     case '~':   
-      int x = -(pop_front(&head));
+      {int x = -(pop_front(&head));
       push_front(&head, x);
-      break;
+      break;}
     case '+':     
-      int x = pop_front(&head);
+      {int x = pop_front(&head);
       int y = pop_front(&head);
       push_front(&head, x + y);
-      break;
+      break;}
     case '-':
-      int x = pop_front(&head);
+      {int x = pop_front(&head);
       int y = pop_front(&head);
       push_front(&head, x - y);
-      break;
+      break;}
     case '*':
-      int x = pop_front(&head);
+      {int x = pop_front(&head);
       int y = pop_front(&head);
       push_front(&head, x * y);
-      break;
+      break;}
     case '/':
-      int x = pop_front(&head);
+      {int x = pop_front(&head);
       int y = pop_front(&head);
       push_front(&head, x / y);
-      break;
+      break;}
     case '%':
-      int x = pop_front(&head);
+      {int x = pop_front(&head);
       int y = pop_front(&head);
       push_front(&head, x % y);
-      break;
+      break;}
     }
     scanf("%c", &str);
   }
