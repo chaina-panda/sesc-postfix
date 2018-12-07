@@ -5,7 +5,6 @@ int main(void) {
   Node *head= NULL;
   char str;
   while(scanf("%c", &str) && str != '\n'){
-    scanf("%c", &str);
     if (str <= '9' && str >= '0')
       push_front(&head, str);
     if (str == '~') {    
