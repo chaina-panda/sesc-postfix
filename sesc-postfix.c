@@ -17,27 +17,28 @@ int main(void) {
     case '+':     
       {int x = pop_front(&head);
       int y = pop_front(&head);
-      push_front(&head, x + y);
+      push_front(&head, y + x);
       break;}
     case '-':
       {int x = pop_front(&head);
       int y = pop_front(&head);
-      push_front(&head, x - y);
+      push_front(&head, y - x);
       break;}
     case '*':
       {int x = pop_front(&head);
       int y = pop_front(&head);
-      push_front(&head, x * y);
+      push_front(&head, y * x);
       break;}
     case '/':
       {int x = pop_front(&head);
       int y = pop_front(&head);
-      push_front(&head, x / y);
+      printf("%d %d\n", x, y);
+      push_front(&head, y / x);
       break;}
     case '%':
       {int x = pop_front(&head);
       int y = pop_front(&head);
-      push_front(&head, x % y);
+      push_front(&head, y % x);
       break;}
     }
     scanf("%c", &str);
