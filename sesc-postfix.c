@@ -63,10 +63,6 @@ int main(void) {
       push_front(&head, x % y);
     }
   }
-  
-  error1(head);
-  error2(head);
-
   printf("%d", pop_front(&head));
   return 0;
 }
