@@ -1,26 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "postfix.h"
-
-//int error1(Node *head){
-  //if (head==NULL) {
-   // printf("empty");
- //   printf("\n");      
- // }
-//}
-
-//int error2(Node *head){
-//Node *hea = head->next;
- // if (hea==NULL) {
- //   printf("empty");
- //   printf("\n");     
-//  }
-//}
-
 int main(void) {
   Node *head= NULL;
   char str;
-  
   while(scanf("%c", &str) && str != '\n'){
     scanf("%c", &str);
     if (str <= '9' && str >= '0')
