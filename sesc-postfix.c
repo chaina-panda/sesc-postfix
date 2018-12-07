@@ -21,7 +21,7 @@ int main(void) {
   Node *head= NULL;
   char str;
   scanf("%c", &str);
-  while(scanf("%c", &ch) && ch != '\n'){
+  while(scanf("%c", &str) && str != '\n'){
     scanf("%c", &str);
     if (str <= '9' && str >= '0')
       push_front(&head, str);
