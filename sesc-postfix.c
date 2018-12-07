@@ -4,18 +4,18 @@
 
 int error1(Node *head){
   if (head==NULL) {
-    //printf("empty");
-    //printf("\n");
-    //exit(0);      
+    printf("empty");
+    printf("\n");
+    exit(0);      
   }
 }
 
 int error2(Node *head){
 Node *hea = head->next;
   if (hea==NULL) {
-    //printf("empty");
-    //printf("\n");
-    //exit(0);      
+    printf("empty");
+    printf("\n");
+    exit(0);      
   }
 }
 
@@ -65,9 +65,9 @@ int main(void) {
   }
   
   if (error1(head) == 0 || error2(head) != 0) {
-    //printf("empty");
-    //printf("\n");
-    //exit(0);
+    printf("empty");
+    printf("\n");
+    exit(0);
   }
 
   printf("%d", pop_front(&head));
