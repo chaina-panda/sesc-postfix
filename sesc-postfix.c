@@ -5,8 +5,7 @@
 //int error1(Node *head){
   //if (head==NULL) {
    // printf("empty");
- //   printf("\n");
- //   exit(0);      
+ //   printf("\n");      
  // }
 //}
 
@@ -14,8 +13,7 @@
 //Node *hea = head->next;
  // if (hea==NULL) {
  //   printf("empty");
- //   printf("\n");
- //   exit(0);      
+ //   printf("\n");     
 //  }
 //}
 
@@ -23,41 +21,35 @@ int main(void) {
   Node *head= NULL;
   char str;
   scanf("%c", &str);
-  for( ;str != '\n'; ){
+  while(scanf("%c", &ch) && ch != '\n'){
     scanf("%c", &str);
     if (str <= '9' && str >= '0')
       push_front(&head, str);
-    if (str == '~') {
-      //error1(head);     
+    if (str == '~') {    
       int x = -(pop_front(&head));
       push_front(&head, x);
     }
-    if (str == '+') {
-     // error2(head);      
+    if (str == '+') {     
       int x = pop_front(&head);
       int y = pop_front(&head);
       push_front(&head, x + y);
     }
     if (str == '-') {
-     // error2(head);
       int x = pop_front(&head);
       int y = pop_front(&head);
       push_front(&head, x - y);
     }
     if (str == '*') {
-    //  error2(head);
       int x = pop_front(&head);
       int y = pop_front(&head);
       push_front(&head, x * y);
     }
     if (str == '/') {
-    //  error2(head);
       int x = pop_front(&head);
       int y = pop_front(&head);
       push_front(&head, x / y);
     }
     if (str == '%') {
-   //   error2(head);
       int x = pop_front(&head);
       int y = pop_front(&head);
       push_front(&head, x % y);
