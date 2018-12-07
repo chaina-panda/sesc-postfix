@@ -64,11 +64,8 @@ int main(void) {
     }
   }
   
-  if (error1(head) == 0 || error2(head) != 0) {
-    printf("empty");
-    printf("\n");
-    exit(0);
-  }
+  error1(head);
+  error2(head);
 
   printf("%d", pop_front(&head));
   return 0;
