@@ -7,4 +7,3 @@ typedef struct Node {
 
 void push_front(Node **head, int num);
 int pop_front(Node **head);
-int size(Node *head);
