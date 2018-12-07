@@ -11,7 +11,7 @@ int error1(Node **head){
 }
 
 int error2(Node **head){
-Node *hea = head->next;
+Node *hea = (*head)->next;
   if ((*hea)==NULL) {
     printf("empty");
     printf("\n");
